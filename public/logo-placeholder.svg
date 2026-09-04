@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 52" fill="none">
+  <text x="4" y="14" font-family="Outfit, Inter, system-ui, sans-serif" font-size="9" font-weight="600" fill="#6B7280" letter-spacing="4">CLÍNICA</text>
+  <text x="2" y="36" font-family="Outfit, Inter, system-ui, sans-serif" font-size="22" font-weight="800" fill="#1B5EA6">SAN MARTÍN</text>
+  <rect x="0" y="40" width="218" height="12" rx="2" fill="#1B5EA6"/>
+  <text x="109" y="50" font-family="Outfit, Inter, system-ui, sans-serif" font-size="8" font-weight="600" fill="white" text-anchor="middle" letter-spacing="2">BARRANQUILLA LTDA.</text>
+</svg>

@@ -1,0 +1,2 @@
+PLACEHOLDER — Reemplazar este archivo con el logo real de la clínica.
+Copiar el archivo del logo original como: public/logo.png
