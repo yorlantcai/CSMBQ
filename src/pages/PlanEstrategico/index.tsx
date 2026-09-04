@@ -23,9 +23,9 @@ const PRINCIPIOS = [
   { term: 'Trabajo en equipo',           def: 'Integramos conocimientos y competencias para brindar una atención de excelencia.' },
 ]
 
-const IMG_HERO       = '/images/DSC_0366.JPG'
-const IMG_MISION     = '/images/DSC_0144.JPG'
-const IMG_VALORES    = '/images/DSC_0146.JPG'
+const IMG_HERO = import.meta.env.BASE_URL + 'images/DSC_0366.JPG'
+const IMG_MISION = import.meta.env.BASE_URL + 'images/DSC_0144.JPG'
+const IMG_VALORES = import.meta.env.BASE_URL + 'images/DSC_0146.JPG'
 const IMG_PRINCIPIOS = import.meta.env.BASE_URL + 'images/DSC_0235.JPG'
 
 // ── Lista de términos ─────────────────────────────────────────────────────────

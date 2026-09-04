@@ -35,7 +35,7 @@ const DERECHOS = [
 ]
 
 // ── Imágenes ──────────────────────────────────────────────────────────────────
-const IMG_HERO    = '/images/DSC_0146.JPG'
+const IMG_HERO = import.meta.env.BASE_URL + 'images/DSC_0146.JPG'
 const IMG_DEBERES = import.meta.env.BASE_URL + 'images/DSC_0308.JPG'
 const IMG_DERECHOS = import.meta.env.BASE_URL + 'images/DSC_0290.JPG'
 

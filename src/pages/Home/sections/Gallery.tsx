@@ -11,7 +11,7 @@ interface TileData {
 // ── Bento Grid — área clínica principal ──────────────────────────────────────
 const TILES_1: TileData[] = [
   {
-    src: '/images/URG_0001.png',
+    src: import.meta.env.BASE_URL + 'images/URG_0001.png',
     alt: 'Equipo médico especializado Clínica San Martín Barranquilla',
     label: 'Equipo Médico',
     caption: 'Profesionales altamente especializados y comprometidos',
@@ -21,7 +21,7 @@ const TILES_1: TileData[] = [
     objectPos: 'object-center',
   },
   {
-    src: '/images/DSC_0149.JPG',
+    src: import.meta.env.BASE_URL + 'images/DSC_0149.JPG',
     alt: 'Atención humanizada Clínica San Martín Barranquilla',
     label: 'Humanización',
     caption: 'El paciente, siempre al centro de cada decisión',

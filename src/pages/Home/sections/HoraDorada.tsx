@@ -156,8 +156,8 @@ export function HoraDorada() {
             {/* Dos imágenes apiladas */}
             <div className="flex flex-col gap-4 flex-1">
               {[
-                { src: '/images/FHD_001.jpg', alt: 'Programa Hora Dorada' },
-                { src: '/images/FHD_002.jpg', alt: 'Taller Hora Dorada' },
+                { src: import.meta.env.BASE_URL + 'images/FHD_001.jpg', alt: 'Programa Hora Dorada' },
+                { src: import.meta.env.BASE_URL + 'images/FHD_002.jpg', alt: 'Taller Hora Dorada' },
               ].map((img) => (
                 <div
                   key={img.src}

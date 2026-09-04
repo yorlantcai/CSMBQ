@@ -22,7 +22,7 @@ const DIFFERENTIATORS = [
 ]
 
 const IMG_MAIN = import.meta.env.BASE_URL + 'images/DSC_0032.JPG'
-const IMG_SEC  = '/images/DSC_0330.JPG'
+const IMG_SEC = import.meta.env.BASE_URL + 'images/DSC_0330.JPG'
 
 export function About() {
   return (

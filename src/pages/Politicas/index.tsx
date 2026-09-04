@@ -45,9 +45,9 @@ const FORMAS = [
 ]
 
 // ── Imágenes ──────────────────────────────────────────────────────────────────
-const IMG_HERO    = '/images/DSC_0123.JPG'  // nursing station / pasillo
-const IMG_INTRO   = '/images/DSC_0135.JPG'  // área clínica
-const IMG_BOTTOM  = '/images/DSC_0387.JPG'
+const IMG_HERO = import.meta.env.BASE_URL + 'images/DSC_0123.JPG'  // nursing station / pasillo
+const IMG_INTRO = import.meta.env.BASE_URL + 'images/DSC_0135.JPG'  // área clínica
+const IMG_BOTTOM = import.meta.env.BASE_URL + 'images/DSC_0387.JPG'
 
 // ── Subcomponente: sección con título e ícono ─────────────────────────────────
 interface PolicySectionProps {
