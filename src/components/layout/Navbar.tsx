@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, useRef } from 'react'
+﻿import { useState, useEffect, useCallback, useRef } from 'react'
 import { useNavigate, useLocation, Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, Phone, ChevronRight, ChevronDown, Clock, Network, BookOpen, Shield } from 'lucide-react'
@@ -80,7 +80,7 @@ export function Navbar() {
             aria-label="Clínica San Martín Barranquilla — Ir al inicio"
           >
             <img
-              src="/logo.png"
+              src={import.meta.env.BASE_URL + 'logo.png'}
               alt="Clínica San Martín Barranquilla Ltda."
               onError={(e) => { (e.currentTarget as HTMLImageElement).src = '/logo-placeholder.svg' }}
               className={[
@@ -256,7 +256,7 @@ export function Navbar() {
             >
               {/* Drawer header */}
               <div className="flex items-center justify-between p-5 border-b border-clinic-100/60">
-                <img src="/logo.png" alt="Clínica San Martín" onError={(e) => { (e.currentTarget as HTMLImageElement).src = '/logo-placeholder.svg' }} className="h-9 w-auto object-contain" />
+                <img src={import.meta.env.BASE_URL + 'logo.png'} alt="Clínica San Martín" onError={(e) => { (e.currentTarget as HTMLImageElement).src = '/logo-placeholder.svg' }} className="h-9 w-auto object-contain" />
                 <button
                   onClick={() => setMobileMenuOpen(false)}
                   className="p-2 rounded-xl text-dark/70 hover:bg-clinic-50 hover:text-clinic-600 transition-colors"

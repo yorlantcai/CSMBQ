@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+﻿import { motion } from 'framer-motion'
 import { staggerContainer, staggerItem, VIEWPORT_CONFIG } from '@/utils/animations'
 import { HORA_DORADA_PROGRAMS } from '@/constants'
 
@@ -107,12 +107,12 @@ export function HoraDorada() {
         >
           <div className="flex items-center justify-center gap-8 mb-8">
             <img
-              src="/images/L_Hora_Dorada.png"
+              src={import.meta.env.BASE_URL + 'images/L_Hora_Dorada.png'}
               alt="Logo Fundación Hora Dorada"
               className="h-36 w-auto object-contain"
             />
             <img
-              src="/images/N_Hora_Dorada.png"
+              src={import.meta.env.BASE_URL + 'images/N_Hora_Dorada.png'}
               alt="Niños Fundación Hora Dorada"
               className="h-32 w-auto object-contain"
             />
@@ -145,7 +145,7 @@ export function HoraDorada() {
               style={{ border: '2px solid rgba(251,191,36,0.30)' }}
             >
               <img
-                src="/images/FHD_003.jpg"
+                src={import.meta.env.BASE_URL + 'images/FHD_003.jpg'}
                 alt="Actividades Fundación Hora Dorada"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />

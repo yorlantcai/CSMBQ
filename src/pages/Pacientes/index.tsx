@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+﻿import { motion } from 'framer-motion'
 import { ArrowLeft, CheckCircle2, ShieldCheck, ClipboardList, FileText, QrCode, ArrowRight } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import { QRCodeSVG } from 'qrcode.react'
@@ -36,8 +36,8 @@ const DERECHOS = [
 
 // ── Imágenes ──────────────────────────────────────────────────────────────────
 const IMG_HERO    = '/images/DSC_0146.JPG'
-const IMG_DEBERES = '/images/DSC_0308.JPG'
-const IMG_DERECHOS = '/images/DSC_0290.JPG'
+const IMG_DEBERES = import.meta.env.BASE_URL + 'images/DSC_0308.JPG'
+const IMG_DERECHOS = import.meta.env.BASE_URL + 'images/DSC_0290.JPG'
 
 // ── Subcomponente: lista de ítems ─────────────────────────────────────────────
 function ItemList({
@@ -294,7 +294,7 @@ export function PacientesPage() {
       >
         <div className="container-xl flex flex-col sm:flex-row items-center justify-between gap-4">
           <img
-            src="/logo.png"
+            src={import.meta.env.BASE_URL + 'logo.png'}
             alt="Clínica San Martín Barranquilla"
             className="h-8 w-auto object-contain opacity-60"
             onError={(e) => { (e.currentTarget as HTMLImageElement).src = '/logo-placeholder.svg' }}

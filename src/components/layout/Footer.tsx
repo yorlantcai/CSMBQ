@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+﻿import { motion } from 'framer-motion'
 import { MapPin, Phone, Mail, Clock, Globe, Heart, ExternalLink, Facebook, Instagram, Youtube } from 'lucide-react'
 import { NAV_LINKS, CONTACT_INFO, YEARS_OF_SERVICE, CLINIC_SLOGAN } from '@/constants'
 import { staggerContainer, staggerItem, VIEWPORT_CONFIG } from '@/utils/animations'
@@ -37,7 +37,7 @@ export function Footer() {
           {/* Brand column */}
           <motion.div variants={staggerItem} className="lg:col-span-1">
             <img
-              src="/logo.png"
+              src={import.meta.env.BASE_URL + 'logo.png'}
               alt="Clínica San Martín Barranquilla Ltda."
               onError={(e) => { (e.currentTarget as HTMLImageElement).src = '/logo-placeholder.svg' }}
               className="h-12 w-auto object-contain mb-5 brightness-0 invert opacity-90"

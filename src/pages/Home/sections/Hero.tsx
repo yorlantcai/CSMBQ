@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+﻿import { useRef } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { ChevronDown, ArrowRight, FlaskConical, Award } from 'lucide-react'
 import { YEARS_OF_SERVICE } from '@/constants'
@@ -21,7 +21,7 @@ const STATS_STRIP = [
   { value: '165',  label: 'Camas Hospitalarias'  },
 ]
 
-const IMG_TEAM = '/images/Principal.jpg'
+const IMG_TEAM = import.meta.env.BASE_URL + 'images/Principal.jpg'
 
 export function Hero() {
   const containerRef = useRef<HTMLDivElement>(null)

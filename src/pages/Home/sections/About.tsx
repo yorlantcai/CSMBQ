@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+﻿import { motion } from 'framer-motion'
 import { CheckCircle2, ArrowRight, ShieldCheck, Microscope, Users, Stethoscope } from 'lucide-react'
 import { staggerContainer, staggerItem, fadeInLeft, fadeInRight, VIEWPORT_CONFIG } from '@/utils/animations'
 import { Card3D } from '@/components/ui/Card3D'
@@ -21,7 +21,7 @@ const DIFFERENTIATORS = [
   'Atención humanizada e integral',
 ]
 
-const IMG_MAIN = '/images/DSC_0032.JPG'
+const IMG_MAIN = import.meta.env.BASE_URL + 'images/DSC_0032.JPG'
 const IMG_SEC  = '/images/DSC_0330.JPG'
 
 export function About() {

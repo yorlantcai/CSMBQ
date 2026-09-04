@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+﻿import { motion } from 'framer-motion'
 import { Building2, HeartPulse, TrendingUp, Star, FlaskConical, Award, ArrowLeft } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import { Card3D } from '@/components/ui/Card3D'
@@ -91,7 +91,7 @@ export function HistoriaPage() {
         {/* Background image */}
         <div className="absolute inset-0 h-[420px]">
           <img
-            src="/images/Principal.jpg"
+            src={import.meta.env.BASE_URL + 'images/Principal.jpg'}
             alt=""
             className="w-full h-full object-cover object-[center_35%]"
             aria-hidden="true"
@@ -248,7 +248,7 @@ export function HistoriaPage() {
       >
         <div className="container-xl flex flex-col sm:flex-row items-center justify-between gap-4">
           <img
-            src="/logo.png"
+            src={import.meta.env.BASE_URL + 'logo.png'}
             alt="Clínica San Martín Barranquilla"
             className="h-8 w-auto object-contain opacity-60"
             onError={(e) => { (e.currentTarget as HTMLImageElement).src = '/logo-placeholder.svg' }}

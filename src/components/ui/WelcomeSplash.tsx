@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback } from 'react'
+﻿import { useEffect, useState, useCallback } from 'react'
 import { motion, AnimatePresence, useMotionValue, useSpring, useTransform } from 'framer-motion'
 
 interface WelcomeSplashProps { onDone: () => void }
@@ -164,7 +164,7 @@ export function WelcomeSplash({ onDone }: WelcomeSplashProps) {
                 }}
               >
                 <img
-                  src="/logo.png"
+                  src={import.meta.env.BASE_URL + 'logo.png'}
                   alt="Clínica San Martín Barranquilla Ltda."
                   onError={(e) => { (e.currentTarget as HTMLImageElement).src = '/logo-placeholder.svg' }}
                   className="h-20 sm:h-24 w-auto object-contain"

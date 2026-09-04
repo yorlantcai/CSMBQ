@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+﻿import { motion } from 'framer-motion'
 import { Card3D } from '@/components/ui/Card3D'
 import { staggerContainer, staggerItem, VIEWPORT_CONFIG } from '@/utils/animations'
 
@@ -133,7 +133,7 @@ export function Gallery() {
           <Card3D intensity={4} className="relative">
             <div className="relative aspect-[21/6] overflow-hidden rounded-3xl">
               <img
-                src="/images/Principal.jpg"
+                src={import.meta.env.BASE_URL + 'images/Principal.jpg'}
                 alt="Fachada principal Clínica San Martín Barranquilla Ltda."
                 className="w-full h-full object-cover object-[center_40%] scale-105 hover:scale-100 transition-transform duration-1000"
                 loading="lazy"

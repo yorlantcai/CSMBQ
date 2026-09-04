@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+﻿import { motion } from 'framer-motion'
 import { ArrowLeft, CheckCircle2, HelpCircle, ListChecks, Layers2, Users2 } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import { Card3D } from '@/components/ui/Card3D'
@@ -308,7 +308,7 @@ export function PoliticasPage() {
       >
         <div className="container-xl flex flex-col sm:flex-row items-center justify-between gap-4">
           <img
-            src="/logo.png"
+            src={import.meta.env.BASE_URL + 'logo.png'}
             alt="Clínica San Martín Barranquilla"
             className="h-8 w-auto object-contain opacity-60"
             onError={(e) => { (e.currentTarget as HTMLImageElement).src = '/logo-placeholder.svg' }}

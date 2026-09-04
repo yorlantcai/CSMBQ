@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+﻿import { motion } from 'framer-motion'
 import { ArrowLeft, Target, Eye, Heart, Layers } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import { Card3D } from '@/components/ui/Card3D'
@@ -26,7 +26,7 @@ const PRINCIPIOS = [
 const IMG_HERO       = '/images/DSC_0366.JPG'
 const IMG_MISION     = '/images/DSC_0144.JPG'
 const IMG_VALORES    = '/images/DSC_0146.JPG'
-const IMG_PRINCIPIOS = '/images/DSC_0235.JPG'
+const IMG_PRINCIPIOS = import.meta.env.BASE_URL + 'images/DSC_0235.JPG'
 
 // ── Lista de términos ─────────────────────────────────────────────────────────
 function TermList({ items, accent = 'clinic' }: { items: { term: string; def: string }[]; accent?: 'clinic' | 'sky' | 'emerald' | 'violet' }) {
@@ -297,7 +297,7 @@ export function PlanEstrategicoPage() {
       >
         <div className="container-xl flex flex-col sm:flex-row items-center justify-between gap-4">
           <img
-            src="/logo.png"
+            src={import.meta.env.BASE_URL + 'logo.png'}
             alt="Clínica San Martín Barranquilla"
             className="h-8 w-auto object-contain opacity-60"
             onError={(e) => { (e.currentTarget as HTMLImageElement).src = '/logo-placeholder.svg' }}
