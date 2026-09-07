@@ -138,7 +138,24 @@ export function HoraDorada() {
           transition={{ duration: 0.7, delay: 0.1 }}
           className="mb-16"
         >
-          <div className="flex flex-col md:flex-row gap-4 max-w-5xl mx-auto" style={{ height: 460 }}>
+          {/* Mobile: grid 2 columnas. Desktop: fila con imagen grande + 2 apiladas */}
+          <div className="grid grid-cols-2 gap-3 md:hidden max-w-xl mx-auto">
+            {[
+              { src: import.meta.env.BASE_URL + 'images/FHD_003.jpg', alt: 'Actividades Fundación Hora Dorada' },
+              { src: import.meta.env.BASE_URL + 'images/FHD_001.jpg', alt: 'Programa Hora Dorada' },
+              { src: import.meta.env.BASE_URL + 'images/FHD_002.jpg', alt: 'Taller Hora Dorada' },
+            ].map((img, i) => (
+              <div
+                key={img.src}
+                className={`rounded-2xl overflow-hidden shadow-md ${i === 0 ? 'col-span-2' : ''}`}
+                style={{ aspectRatio: i === 0 ? '16/7' : '4/3', border: '2px solid rgba(251,191,36,0.30)' }}
+              >
+                <img src={img.src} alt={img.alt} className="w-full h-full object-cover" />
+              </div>
+            ))}
+          </div>
+
+          <div className="hidden md:flex flex-row gap-4 max-w-5xl mx-auto" style={{ height: 460 }}>
             {/* Imagen principal */}
             <div
               className="rounded-3xl overflow-hidden shadow-xl flex-[1.2] relative group"
@@ -149,7 +166,6 @@ export function HoraDorada() {
                 alt="Actividades Fundación Hora Dorada"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
-              {/* Overlay sutil en hover */}
               <div className="absolute inset-0 bg-gradient-to-t from-orange-900/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </div>
 
