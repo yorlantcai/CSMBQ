@@ -45,7 +45,7 @@ function PortalCard({ portal, index }: { portal: typeof RESULT_PORTALS[0]; index
         />
 
         {/* Content */}
-        <div className="relative z-10 p-8 md:p-10 flex flex-col min-h-[360px]">
+        <div className="relative z-10 p-8 md:p-10 flex flex-col h-auto md:h-[400px]">
           {/* Top row */}
           <div className="flex items-start justify-between mb-8">
             <div className="w-16 h-16 rounded-2xl bg-white/15 border border-white/20 flex items-center justify-center backdrop-blur-sm" style={{ transform: 'translateZ(16px)' }}>
