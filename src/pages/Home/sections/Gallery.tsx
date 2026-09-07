@@ -153,22 +153,6 @@ export function Gallery() {
                 <p className="text-white/50 text-xs md:text-sm mt-2">Carrera 43 No. 70 – 106</p>
               </div>
 
-              {/* Badge mobile — esquina inferior izquierda */}
-              <div className="md:hidden absolute bottom-4 left-6 flex items-center gap-1.5 bg-white/10 border border-white/20 backdrop-blur-md rounded-full px-3 py-1.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" aria-hidden="true" />
-                <span className="text-white text-[11px] font-semibold">Urgencias 24/7</span>
-              </div>
-
-              {/* Badges derecha — solo desktop */}
-              <div className="hidden md:flex absolute right-12 top-1/2 -translate-y-1/2 flex-col items-end gap-2" style={{ transform: 'translate(0, -50%) translateZ(12px)' }}>
-                <div className="flex items-center gap-2 bg-white/10 border border-white/20 backdrop-blur-md rounded-xl px-4 py-2.5">
-                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" aria-hidden="true" />
-                  <span className="text-white text-xs font-semibold">Urgencias 24/7</span>
-                </div>
-                <div className="bg-white/10 border border-white/20 backdrop-blur-md rounded-xl px-4 py-2.5">
-                  <span className="text-white/70 text-xs">Alta Complejidad · Nivel III</span>
-                </div>
-              </div>
             </div>
           </Card3D>
         </motion.div>
