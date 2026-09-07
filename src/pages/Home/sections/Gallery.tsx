@@ -142,7 +142,7 @@ export function Gallery() {
               <div className="absolute inset-0 bg-gradient-to-t from-clinic-950/60 via-transparent to-transparent" aria-hidden="true" />
 
               {/* Texto izquierda */}
-              <div className="absolute left-6 md:left-12 top-1/2 -translate-y-1/2 max-w-[55%] md:max-w-none" style={{ transform: 'translate(0, -50%) translateZ(20px)' }}>
+              <div className="absolute left-6 md:left-12 top-1/2 -translate-y-1/2 max-w-[60%] md:max-w-none" style={{ transform: 'translate(0, -50%) translateZ(20px)' }}>
                 <p className="text-sky-300/80 text-xs font-semibold tracking-[0.2em] uppercase mb-2">Barranquilla, Colombia</p>
                 <h3 className="font-display font-bold text-white text-xl md:text-4xl leading-tight">
                   Clínica San Martín<br />
@@ -150,14 +150,13 @@ export function Gallery() {
                     Barranquilla Ltda.
                   </span>
                 </h3>
-                <div className="flex items-center gap-2 mt-2 md:hidden flex-wrap">
-                  <p className="text-white/50 text-xs">Carrera 43 No. 70 – 106</p>
-                  <div className="flex items-center gap-1 bg-white/10 border border-white/20 backdrop-blur-md rounded-full px-2 py-0.5">
-                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse shrink-0" aria-hidden="true" />
-                    <span className="text-white text-[10px] font-semibold whitespace-nowrap">Urgencias 24/7</span>
-                  </div>
-                </div>
-                <p className="hidden md:block text-white/50 text-sm mt-2">Carrera 43 No. 70 – 106</p>
+                <p className="text-white/50 text-xs md:text-sm mt-2">Carrera 43 No. 70 – 106</p>
+              </div>
+
+              {/* Badge mobile — esquina inferior izquierda */}
+              <div className="md:hidden absolute bottom-4 left-6 flex items-center gap-1.5 bg-white/10 border border-white/20 backdrop-blur-md rounded-full px-3 py-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" aria-hidden="true" />
+                <span className="text-white text-[11px] font-semibold">Urgencias 24/7</span>
               </div>
 
               {/* Badges derecha — solo desktop */}
