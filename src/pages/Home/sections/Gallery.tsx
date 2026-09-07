@@ -142,19 +142,29 @@ export function Gallery() {
               <div className="absolute inset-0 bg-gradient-to-t from-clinic-950/60 via-transparent to-transparent" aria-hidden="true" />
 
               {/* Texto izquierda */}
-              <div className="absolute left-8 md:left-12 top-1/2 -translate-y-1/2" style={{ transform: 'translate(0, -50%) translateZ(20px)' }}>
+              <div className="absolute left-6 md:left-12 top-1/2 -translate-y-1/2 max-w-[55%] md:max-w-none" style={{ transform: 'translate(0, -50%) translateZ(20px)' }}>
                 <p className="text-sky-300/80 text-xs font-semibold tracking-[0.2em] uppercase mb-2">Barranquilla, Colombia</p>
-                <h3 className="font-display font-bold text-white text-2xl md:text-4xl leading-tight">
+                <h3 className="font-display font-bold text-white text-xl md:text-4xl leading-tight">
                   Clínica San Martín<br />
                   <span className="bg-gradient-to-r from-sky-300 to-white bg-clip-text text-transparent">
                     Barranquilla Ltda.
                   </span>
                 </h3>
-                <p className="text-white/50 text-sm mt-2">Carrera 43 No. 70 – 106</p>
+                <p className="text-white/50 text-xs md:text-sm mt-2">Carrera 43 No. 70 – 106</p>
+                {/* Badges en mobile: debajo del título */}
+                <div className="flex flex-col gap-1.5 mt-3 md:hidden">
+                  <div className="flex items-center gap-1.5 bg-white/10 border border-white/20 backdrop-blur-md rounded-lg px-2.5 py-1.5 w-fit">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" aria-hidden="true" />
+                    <span className="text-white text-[10px] font-semibold">Urgencias 24/7</span>
+                  </div>
+                  <div className="bg-white/10 border border-white/20 backdrop-blur-md rounded-lg px-2.5 py-1.5 w-fit">
+                    <span className="text-white/70 text-[10px]">Alta Complejidad · Nivel III</span>
+                  </div>
+                </div>
               </div>
 
-              {/* Badges derecha */}
-              <div className="absolute right-8 md:right-12 top-1/2 -translate-y-1/2 flex flex-col items-end gap-2" style={{ transform: 'translate(0, -50%) translateZ(12px)' }}>
+              {/* Badges derecha — solo desktop */}
+              <div className="hidden md:flex absolute right-12 top-1/2 -translate-y-1/2 flex-col items-end gap-2" style={{ transform: 'translate(0, -50%) translateZ(12px)' }}>
                 <div className="flex items-center gap-2 bg-white/10 border border-white/20 backdrop-blur-md rounded-xl px-4 py-2.5">
                   <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" aria-hidden="true" />
                   <span className="text-white text-xs font-semibold">Urgencias 24/7</span>
