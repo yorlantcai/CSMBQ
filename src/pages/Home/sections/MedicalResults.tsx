@@ -19,10 +19,10 @@ function PortalCard({ portal, index }: { portal: typeof RESULT_PORTALS[0]; index
   }
 
   return (
-    <motion.div variants={staggerItem} style={{ perspective: '1000px' }}>
+    <motion.div variants={staggerItem} style={{ perspective: '1000px' }} className="h-full">
       <Card3D
         intensity={6}
-        className="group relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-clinic-800 to-clinic-950 shadow-clinic-lg hover:shadow-clinic-xl transition-shadow duration-500"
+        className="group relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-clinic-800 to-clinic-950 shadow-clinic-lg hover:shadow-clinic-xl transition-shadow duration-500 h-full"
       >
         {/* Color overlay */}
         <div className={`absolute inset-0 bg-gradient-to-br opacity-60 ${portal.color}`} aria-hidden="true" />
@@ -45,7 +45,7 @@ function PortalCard({ portal, index }: { portal: typeof RESULT_PORTALS[0]; index
         />
 
         {/* Content */}
-        <div className="relative z-10 p-8 md:p-10 flex flex-col h-auto md:h-[400px]">
+        <div className="relative z-10 p-8 md:p-10 flex flex-col h-full">
           {/* Top row */}
           <div className="flex items-start justify-between mb-8">
             <div className="w-16 h-16 rounded-2xl bg-white/15 border border-white/20 flex items-center justify-center backdrop-blur-sm" style={{ transform: 'translateZ(16px)' }}>
