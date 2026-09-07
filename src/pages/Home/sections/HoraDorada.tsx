@@ -105,16 +105,16 @@ export function HoraDorada() {
           transition={{ duration: 0.6 }}
           className="text-center max-w-2xl mx-auto mb-14"
         >
-          <div className="flex items-center justify-center gap-8 mb-8">
+          <div className="flex items-center justify-center gap-4 md:gap-8 mb-8">
             <img
               src={import.meta.env.BASE_URL + 'images/L_Hora_Dorada.png'}
               alt="Logo Fundación Hora Dorada"
-              className="h-36 w-auto object-contain"
+              className="h-20 md:h-36 w-auto object-contain"
             />
             <img
               src={import.meta.env.BASE_URL + 'images/N_Hora_Dorada.png'}
               alt="Niños Fundación Hora Dorada"
-              className="h-32 w-auto object-contain"
+              className="h-20 md:h-32 w-auto object-contain"
             />
           </div>
           <h2 className="font-display font-bold text-3xl xl:text-4xl text-dark mb-4 text-balance">
