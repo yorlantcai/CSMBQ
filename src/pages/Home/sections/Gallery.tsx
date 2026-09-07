@@ -150,17 +150,14 @@ export function Gallery() {
                     Barranquilla Ltda.
                   </span>
                 </h3>
-                <p className="text-white/50 text-xs md:text-sm mt-2">Carrera 43 No. 70 – 106</p>
-                {/* Badges en mobile: debajo del título */}
-                <div className="flex flex-col gap-1.5 mt-3 md:hidden">
-                  <div className="flex items-center gap-1.5 bg-white/10 border border-white/20 backdrop-blur-md rounded-lg px-2.5 py-1.5 w-fit">
-                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" aria-hidden="true" />
-                    <span className="text-white text-[10px] font-semibold">Urgencias 24/7</span>
-                  </div>
-                  <div className="bg-white/10 border border-white/20 backdrop-blur-md rounded-lg px-2.5 py-1.5 w-fit">
-                    <span className="text-white/70 text-[10px]">Alta Complejidad · Nivel III</span>
+                <div className="flex items-center gap-2 mt-2 md:hidden flex-wrap">
+                  <p className="text-white/50 text-xs">Carrera 43 No. 70 – 106</p>
+                  <div className="flex items-center gap-1 bg-white/10 border border-white/20 backdrop-blur-md rounded-full px-2 py-0.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse shrink-0" aria-hidden="true" />
+                    <span className="text-white text-[10px] font-semibold whitespace-nowrap">Urgencias 24/7</span>
                   </div>
                 </div>
+                <p className="hidden md:block text-white/50 text-sm mt-2">Carrera 43 No. 70 – 106</p>
               </div>
 
               {/* Badges derecha — solo desktop */}
